@@ -1,36 +1,60 @@
 .movies .movie {
-    background-color: antiquewhite;
+    background-color: white;
     margin-bottom: 70px;
     font-weight: 300;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 13px 27px -5px rgba(50, 50, 93,0.25), 0 8px 16px -8px rgba(0,0,0,0.3), 0 -6px 16px -6px rgba(0,0,0,0.025);
-}
-
-.movies .movie a{
+    color: #2c2c2c;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
+      0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+  
+  .movies .movie a {
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 2fr;
     grid-gap: 20px;
     text-decoration: none;
-    color: bisque;
-}
-
-.movie img{
+    color:#2c2c2c;
+  }
+  
+  .movie img {
     position: relative;
     top: -50px;
-    max-width: 150px;
+    max-width: 300px;
     width: 100%;
+    height: auto;
     margin-right: 30px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93,0.25), 0 18px 36px -18px rgba(0,0,0,0.3), 0 -12px 36px -18px rgba(0,0,0,0.025);
-
-}
-
-.movie .movie_title{
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  
+  .movie .movie__title,
+  .movie .movie__year {
     margin: 0;
-    font-weight: 200;
+    font-weight: 300;
+  }
+  
+  .movie .movie__title {
     margin-bottom: 5px;
+    font-size: 28px;
+    color: #2c2c2c;
+  }
+  
+  .movie .movie__percent {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 24px;
-    color: aliceblue;
-}
-
-
+    margin: 5px 0px;
+  }
+  .movie .movie__release {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    margin: 5px 0px;
+  }

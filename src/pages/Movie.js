@@ -5,7 +5,7 @@ import './Movie.css'
 // Movie 컴포넌트 정의
 function Movie({ id, title, release, percent, image }) {
     return (
-      <div>
+      <div className="movie">
         <img src={image} alt={title} title={title}/>
         <div className="movie_data">
           <h2 className="movie_title">{title}</h2>
